@@ -33,12 +33,12 @@ public class MuebleServiceImpl implements MuebleService {
 	}
 
 	@Override
-	public MuebleLigero getMueble(Integer id) {
+	public MuebleDTO getMueble(Integer id) {
 		Mueble mueble = repository.findById(id).orElse(null);
 		if (mueble == null)
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Data not found");
 		else
-			return mapper.map(mueble, MuebleLigero.class);
+			return mapper.map(mueble, MuebleDTO.class);
 	}
 
 	@Override

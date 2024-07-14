@@ -37,7 +37,7 @@ public class MueblesController {
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<MuebleLigero> getInmuebleById(@PathVariable Integer id) {
+	public ResponseEntity<MuebleDTO> getInmuebleById(@PathVariable Integer id) {
 		return ResponseEntity.ok(muebleService.getMueble(id));
 	}
 

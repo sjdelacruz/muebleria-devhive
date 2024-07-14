@@ -9,7 +9,7 @@ public interface MuebleService {
 
 	List<MuebleLigero> getMuebles();
 	
-	MuebleLigero getMueble(Integer id);
+	MuebleDTO getMueble(Integer id);
 	
 	MuebleDTO postMueble(MuebleDTO mueble);
 	
