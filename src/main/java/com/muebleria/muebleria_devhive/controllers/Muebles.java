@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/muebleria_devhive")
-public class MuebleriaController {
+@RequestMapping("/inmuebles")
+public class Muebles {
 	
-	public MuebleriaController() {
+	public Muebles() {
 		
 	}
 	
-	@GetMapping("/inmuebles/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<String> getInmueble(@PathVariable Integer id) {
 
 		return ResponseEntity.ok("");

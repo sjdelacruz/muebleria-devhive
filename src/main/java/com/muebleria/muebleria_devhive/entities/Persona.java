@@ -3,17 +3,19 @@ package com.muebleria.muebleria_devhive.entities;
 import java.io.Serializable;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-@MappedSuperclass
+@Entity
+@Table(name = "Usuario")
 public class Persona implements Serializable {
 	
     /**
@@ -24,7 +26,7 @@ public class Persona implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "idpersona")
-    private int idpersona;
+    private Integer idpersona;
     
     @Column(name = "nombre")
     private String nombre;

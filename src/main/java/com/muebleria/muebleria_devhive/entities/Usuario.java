@@ -9,20 +9,19 @@ import lombok.Setter;
 @Setter
 @Getter
 @Table(name = "Usuario")
-public class Usuario extends Persona{
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class Usuario{
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "idusuario")
-    private int idusuario;
+    private Integer idusuario;
     
     @Column(name = "usuario")
     private String usuario;
     
     @Column(name = "contrasenia")
     private String contrasenia;
+    
+    @OneToOne
+    private Persona persona;
 }
