@@ -59,4 +59,12 @@ public class MueblesController {
 		
 		return ResponseEntity.ok("Data deleted");
 	}
+	
+	@DeleteMapping("procedimiento/{id}")
+	public ResponseEntity<String> deleteMueble2(@PathVariable Integer id){
+		muebleService.deleteMueble2(id);
+		
+		return ResponseEntity.ok("Data deleted");
+	}
+	
 }

@@ -70,5 +70,10 @@ public class MuebleServiceImpl implements MuebleService {
 	public void deleteMueble(Integer id) {
 		repository.deleteById(id);
 	}
+	
+	@Override
+	public void deleteMueble2(Integer id) {
+		repository.eliminarMueble(id);
+	}
 
 }

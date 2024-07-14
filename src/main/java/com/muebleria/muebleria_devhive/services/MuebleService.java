@@ -16,4 +16,6 @@ public interface MuebleService {
 	MuebleDTO putMueble(Integer id, MuebleDTO mueble);
 	
 	void deleteMueble(Integer id);
+	
+	void deleteMueble2(Integer id);
 }
