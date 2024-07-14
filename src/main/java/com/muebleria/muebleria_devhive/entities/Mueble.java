@@ -16,7 +16,7 @@ public class Mueble {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "idmueble")
-    private int id;
+    private Integer id;
 	
     @Column(name = "nombre")
     private String nombre;
