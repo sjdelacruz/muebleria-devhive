@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: muebleria-service
+data:
+  application.properties: |-
+    configmap.databaseUri=locahost:5030
